@@ -1,0 +1,45 @@
+.headingParent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  padding-bottom: 2%;
+}
+.handleBackgroundTemplateCenter {
+  width: 100%;
+  /* height: 86vh; */
+  background-color: #f9faff;
+  padding-top: 1%;
+}
+.handleArrow {
+  font-size: 29px;
+  padding-left: 27px;
+}
+.templateHeading {
+  font-size: 29px;
+  font-weight: 500;
+}
+.templateButton {
+  padding: 9px 25px;
+  background-color: #aec4d2;
+  border: none;
+  color: black;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 910px) {
+  .headingParent {
+    padding: 3% 20px;
+    padding-top: 1%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .templateHeading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 495px) {
+  .templateButton {
+    padding: 8px 20px;
+  }
+}

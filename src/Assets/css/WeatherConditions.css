@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.parentWeather {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 40px;
+}
+.weatherPart1 {
+  display: flex;
+  align-items: center;
+}
+.handleWeatherMargin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.temperatureDiv {
+  width: 90px;
+  height: 40px;
+  background-color: #ffffff;
+  margin-top: 25px;
+  border-radius: 20px;
+  display: flex;
+}
+.round {
+  width: 40px;
+  height: 100%;
+  background: #007bff;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 10px;
+}
+.goTop {
+  vertical-align: super;
+  font-size: 6px;
+}
+.handlePaddingTemp {
+  font-weight: 500;
+  padding: 6px 16px;
+}
+@media screen and (max-width: 1175px) {
+  .parentWeather {
+    align-items: center;
+  }
+  .weatherPart1 {
+    flex-direction: column;
+  }
+  .handleWeatherMargin {
+    margin: 0;
+  }
+  .temperatureDiv {
+    margin-top: 7px;
+  }
+}

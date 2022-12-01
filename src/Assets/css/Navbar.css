@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.MuiAppBar-positionFixed {
+  position: static !important;
+}
+.MuiAppBar-colorPrimary {
+  background-color: white !important;
+}
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #eef5fd;
+}
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
+.MuiIconButton-colorInherit {
+  color: black !important;
+}
+.MuiDrawer-paper {
+  background-color: #2a3042 !important;
+}
+.MuiList-root a {
+  text-decoration: none !important;
+  color: white !important;
+}
+.navbarSpectra {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: center;
+  padding-right: 25px;
+}
+.MuiToolbar-root {
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+.MuiInputBase-root {
+  width: 18vw;
+  background-color: #eef5fd;
+  padding: 0px !important;
+}
+#removeCircle[class*="Mui"]:focus {
+  outline: none !important;
+}
+.MuiOutlinedInput-adornedEnd {
+  padding-right: 0px !important;
+}
+.notification {
+  padding: 0 15px;
+}
+.notification .MuiSvgIcon-root {
+  color: black;
+}
+.sd {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.navbarName {
+  color: #409cff;
+  padding-left: 7px;
+}
+@media screen and (max-width: 1000px) {
+  .MuiToolbar-root {
+    justify-content: space-between !important;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 600px) {
+  .MuiToolbar-root {
+    justify-content: space-evenly !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .MuiInputBase-root {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 630px) {
+  .MuiInputBase-root {
+    width: 22vw;
+  }
+  /* .MuiButtonBase-root {
+    padding-right: 85px !important;
+  } */
+}
+@media screen and (max-width: 600px) {
+  .MuiInputBase-root {
+    width: 33vw;
+  }
+}
+@media screen and (max-width: 440px) {
+  .MuiInputBase-root {
+    width: 32vw;
+  }
+}
+@media screen and (max-width: 390px) {
+  .MuiInputBase-root {
+    width: 25vw;
+  }
+}

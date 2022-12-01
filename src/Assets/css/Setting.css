@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.settingHandlePaddingAll {
+  padding: 16px 16px 0px 272px;
+}
+.headingPadding {
+  padding-left: 22px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.divHeadingBox {
+  display: flex;
+  align-items: center;
+  background-color: #eef5fd;
+  padding: 10px 22px;
+}
+.divHeading {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+.optionsSetting {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 22px;
+  padding-top: 16px;
+}
+.handleCompanyPadding {
+  padding-top: 20px;
+}
+.handleToolMargin {
+  margin-top: 60px;
+}
+.handleFontSize {
+  font-size: 14px;
+}
+.MuiDivider-root {
+  background: #d1d2d3 !important;
+}
+.agreementHeading {
+  padding: 10px 0;
+  padding-left: 22px;
+  color: #007bff;
+  font-size: 20px;
+}
+.handleIcons {
+  display: flex;
+  align-items: center;
+}
+.agreementButton {
+  padding: 9px 11px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 22px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 960px) {
+  .settingHandlePaddingAll {
+    padding: 0;
+  }
+}

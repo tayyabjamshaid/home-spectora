@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.createAgreementHandlePaddingAll {
+  padding: 16px 16px 0px 272px;
+}
+.companyProfileHeadingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.handleCompanyParentHeading {
+  font-size: 18px;
+}
+.companyButton {
+  padding: 9px 11px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 22px;
+  margin-top: 30px;
+}
+.companyHeading {
+  padding: 20px;
+  background-color: #eef5fd;
+  font-size: 16px;
+}
+@media screen and (max-width: 960px) {
+  .createAgreementHandlePaddingAll {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .companyProfileHeadingDiv {
+    flex-direction: column-reverse;
+  }
+  .handleCompanyParentHeading {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .companyButton {
+    margin: 0;
+  }
+}
+.agreementDiv {
+  display: flex;
+  flex-direction: column;
+}
+.agreeementInput {
+  border-radius: 6px;
+  border: 1px solid #d8d8da;
+  padding: 12px 10px;
+  margin-left: 19px;
+  color: black;
+}
+.agreeementInput::placeholder {
+  color: #ccdae3;
+}
+.agreeementInput:focus {
+  border-color: #9fcdff;
+  outline: none;
+}
+.agreementCreateHeading {
+  font-size: 15px;
+  padding-left: 19px;
+  padding-top: 12px;
+}
+.editorDiv {
+  margin-left: 19px;
+  border: 1px solid #e7e7ea;
+}
+
+.editorClassName {
+  background: #ffffff;
+  height: 223px !important;
+  padding: 5px 10px;
+}
+.rdw-editor-toolbar {
+  background-color: #aec4d2 !important;
+}
+.rdw-option-wrapper,
+.rdw-dropdown-wrapper {
+  background-color: #aec4d2 !important;
+  border: none !important;
+}
+@media screen and (max-width: 1000px) {
+  .editorClassName {
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 720px) {
+  .editorClassName {
+    height: 370px !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .editorClassName {
+    height: 355px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .editorClassName {
+    height: 340px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .editorClassName {
+    height: 327px !important;
+  }
+}
+@media screen and (max-width: 355px) {
+  .editorClassName {
+    height: 317px !important;
+  }
+}

@@ -1,0 +1,100 @@
+.handleBackground {
+  width: 100%;
+  height: 87vh;
+  background-color: #f9faff;
+  padding-top: 4%;
+}
+.parentButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2%;
+  padding-right: 30px;
+}
+.templateCenter {
+  padding: 9px 26px;
+  background-color: #aec4d2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.createTemplate {
+  padding: 9px 25px;
+  margin-left: 8px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 830px) {
+  .parentButton {
+    justify-content: center;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .parentButton {
+    justify-content: center;
+    padding-top: 10%;
+  }
+  .templateCenter,
+  .createTemplate {
+    padding: 9px 5px;
+    margin-bottom: 10px;
+  }
+}
+.modal {
+  background-color: #f9faff;
+}
+.modal-title {
+  font-size: 20px !important;
+  color: #0e0f10 !important;
+  font-weight: 500 !important;
+}
+.modal-header {
+  background-color: #eef5fd !important;
+  box-shadow: 0 4px 18px 0 #e6e9fa, 0 6px 15px 0 #e6e9fa;
+}
+.modalHeaderFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-content {
+  margin-top: 50% !important;
+  width: 600px !important;
+  box-shadow: 0 4px 88px 0 #e6e9fa, 0 6px 80px 0 #e6e9fa;
+}
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 0;
+}
+.modalBtnChild {
+  padding: 20px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #eef5fd;
+  color: #0e0f10;
+  font-weight: 500;
+}
+.radio {
+  margin-right: 5px;
+}
+@media (min-width: 960px) and (max-width: 1100px) {
+  .modal-content {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal-content {
+    width: 100% !important;
+  }
+  .modalButtons {
+    flex-direction: column;
+  }
+  .giveMargin {
+    margin-top: 10px;
+  }
+}

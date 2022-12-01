@@ -1,0 +1,26 @@
+.MuiDrawer-paper {
+  background: #2a3042 !important;
+  margin-top: 0 !important;
+}
+.MuiListItemText-root,
+.MuiListItemIcon-root {
+  color: white !important;
+  font-size: 13px !important;
+  min-width: 40px !important;
+}
+.align .MuiListItemText-root .MuiTypography-root {
+  text-align: center !important;
+  font-size: 18px !important;
+  margin: 15px 0;
+}
+.logout .MuiListItem-root {
+  padding-top: 100px !important;
+}
+.sidebarPara {
+  font-size: 10px;
+  color: white;
+  padding-left: 20px;
+}
+.MuiDrawer-root .MuiPaper-root {
+  overflow: hidden;
+}

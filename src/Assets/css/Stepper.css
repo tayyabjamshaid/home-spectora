@@ -1,0 +1,122 @@
+.stepperParent .MuiPaper-root {
+  margin-top: 20px !important;
+  width: 93%;
+  margin: auto;
+  box-shadow: 0 4px 18px 0 #e6e9fa, 0 6px 15px 0 #e6e9fa !important;
+}
+.handleButtonsStepperFlex {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.stepperButtons .MuiButtonBase-root {
+  padding: 0 !important;
+  color: white !important;
+}
+.nextButton {
+  width: 208px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  height: 46px !important;
+  color: white !important;
+  background-color: #007bff !important;
+  position: absolute !important;
+  top: 89px !important;
+  right: 59px !important;
+}
+
+.backButton {
+  padding: 9px 48px !important;
+  margin-left: 6px !important;
+  background-color: #aec4d2 !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+.MuiStepIcon-active,
+.MuiStepIcon-completed {
+  color: #007bff !important;
+}
+.MuiStepLabel-active,
+.MuiStepLabel-completed {
+  color: #007bff !important;
+}
+.MuiStepConnector-completed .MuiStepConnector-line,
+.MuiStepConnector-active .MuiStepConnector-line {
+  border-color: #007bff !important ;
+}
+.MuiStepConnector-alternativeLabel {
+  left: calc(-50% + 12px) !important;
+  right: calc(50% + 12px) !important;
+}
+@media screen and (max-width: 1400px) {
+  .stepperParent .MuiPaper-root {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .stepperParent .MuiPaper-root {
+    width: 91%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .stepperParent .MuiPaper-root {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .stepperParent .MuiPaper-root {
+    width: 89%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .nextButton {
+    top: 132px !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .stepperParent .MuiPaper-root {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nextButton {
+    right: 200px !important;
+  }
+}
+@media screen and (max-width: 565px) {
+  .nextButton {
+    right: 180px !important;
+  }
+}
+@media screen and (max-width: 525px) {
+  .nextButton {
+    right: 160px !important;
+  }
+}
+@media screen and (max-width: 485px) {
+  .nextButton {
+    right: 140px !important;
+  }
+}
+@media screen and (max-width: 440px) {
+  .nextButton {
+    right: 120px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nextButton {
+    right: 100px !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .nextButton {
+    right: 80px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .MuiBox-root {
+    overflow: scroll !important;
+  }
+}

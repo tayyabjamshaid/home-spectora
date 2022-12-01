@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.parentScratch {
+  width: 95%;
+  margin: auto;
+}
+.headingParentScratch {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+.dialogBoxScratch {
+  width: 260px;
+  height: 59px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.buttonHeadingScratch {
+  height: 42px;
+  padding: 9px 34px;
+  margin-left: 8px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.handleArrow {
+  font-size: 29px;
+  padding-left: 27px;
+}
+.parentBodyScratch {
+  display: flex;
+  padding: 20px 0;
+}
+.addSection {
+  flex-basis: 20%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccdae3;
+}
+.addNarativesParent {
+  flex-basis: 80%;
+}
+.section {
+  width: 100%;
+  height: 575px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  background-color: #aec4d2;
+}
+.addNaratives {
+  width: 100%;
+  padding-left: 10px;
+}
+.component {
+  border: 1px solid black;
+  height: 170px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccdae3;
+}
+.narratives {
+  border-radius: 5px;
+  border: 1px solid #ccdae3;
+  height: 419px;
+}
+.narrativesHeading {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+.addDescriptionParent {
+  width: 95%;
+  margin: auto;
+}
+.addDescriptionHeading {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #aec4d2;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 3px;
+  align-items: center;
+}
+.addDescriptionBody {
+  background-color: #f9faff;
+  width: 100%;
+  /* height: 320px; */
+  word-break: break-all;
+}
+.editorClassName {
+  background: #ffffff;
+  height: 223px !important;
+  padding: 5px 10px;
+}
+.rdw-text-align-wrapper,
+.rdw-option-disabled,
+.rdw-fontsize-dropdown,
+.rdw-embedded-wrapper,
+.rdw-remove-wrapper,
+.rdw-link-wrapper {
+  display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .parentBodyScratch {
+    flex-direction: column;
+  }
+  .narratives {
+    height: 585px;
+    padding-bottom: 10px;
+  }
+  .section {
+    height: 300px;
+  }
+  .addNarativesParent {
+    margin-top: 10px;
+  }
+  .addNaratives {
+    padding-left: 0;
+  }
+  .editorClassName {
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headingParentScratch {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .dialogBoxScratch {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .editorClassName {
+    height: 370px !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .editorClassName {
+    height: 355px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .editorClassName {
+    height: 340px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .editorClassName {
+    height: 327px !important;
+  }
+}
+@media screen and (max-width: 355px) {
+  .editorClassName {
+    height: 317px !important;
+  }
+}

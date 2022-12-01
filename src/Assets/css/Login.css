@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loginParentDiv {
+  display: flex;
+  align-items: center;
+  height: 97vh;
+  overflow: hidden;
+  padding: 0 82px;
+}
+.loginHeading {
+  color: #1f8bfe;
+}
+.welcomeHeading {
+  font-weight: 500;
+}
+.miniHeading {
+  font-size: 16px;
+  color: #858586;
+}
+.handleLoginPaddingForm {
+  padding-top: 30px;
+}
+.handleLoginPaddingFields {
+  padding-bottom: 20px;
+}
+
+.removeShadow {
+  width: 24vw;
+  box-shadow: none;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  padding: 12px 10px;
+}
+.removeShadow::placeholder {
+  color: #858586;
+}
+.handleEyeIconPosition {
+  position: relative;
+}
+.eyeIcon {
+  position: absolute;
+  right: 9px;
+  top: 40px;
+  font-size: 21px;
+}
+.invalidMessagePassword,
+.invalidMessageEmail {
+  display: none;
+
+  color: red;
+}
+.form-check-input {
+  border-radius: 2em !important;
+}
+
+.switchParent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.loginSubmitButton {
+  width: 24vw;
+  border-radius: 6px;
+  padding: 12px 0;
+  background: #007bff;
+  color: white;
+  border: none;
+}
+.moveTowardsSignUp {
+  text-align: center;
+  padding-top: 25px;
+}
+@media screen and (max-width: 1400px) {
+  .removeShadow {
+    width: 40vw;
+  }
+  .loginSubmitButton {
+    width: 40vw;
+  }
+}
+@media (min-width: 960px) and (max-width: 1090px) {
+  .removeShadow {
+    width: 45vw;
+  }
+  .loginSubmitButton {
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .removeShadow {
+    width: 55vw;
+  }
+  .loginParentDiv {
+    justify-content: center;
+  }
+  .loginSubmitButton {
+    width: 55vw;
+  }
+}
+@media (min-width: 650px) and (max-width: 760px) {
+  .removeShadow {
+    width: 65vw;
+  }
+  .loginSubmitButton {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .removeShadow {
+    width: 80vw;
+  }
+  .loginSubmitButton {
+    width: 80vw;
+  }
+}

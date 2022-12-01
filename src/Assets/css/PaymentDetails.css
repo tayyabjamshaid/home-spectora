@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.handlePaymentAllPadding {
+  padding: 35px 42px;
+}
+.paymentParentDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.paymentHeading {
+  padding-top: 22px;
+}
+.contractDiv {
+  display: flex;
+}
+.contractDivPart1 {
+  display: flex;
+}
+
+.form-check-input {
+  border-radius: 50% !important;
+}
+.handleContractPaddingLeft {
+  padding-left: 50px;
+}
+.handleContractIconPaddingLeft {
+  padding-left: 20px;
+  color: #666666;
+}
+@media screen and (max-width: 1400px) {
+  .paymentHeading {
+    text-align: center;
+  }
+  .paymentParentDiv {
+    justify-content: space-evenly;
+  }
+  .contractDiv {
+    justify-content: space-evenly;
+  }
+  .handleContractPaddingLeft {
+    padding-left: 0;
+  }
+  .handleContractIconPaddingLeft {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .contractDiv {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .handleContractPaddingLeft {
+    padding-top: 10px;
+    padding-left: 83px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .paymentParentDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contractDiv {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 34px;
+  }
+  .handleContractPaddingLeft {
+    padding-top: 10px;
+    padding-left: 0;
+    /* padding-left: 55px; */
+  }
+}

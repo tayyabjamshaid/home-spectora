@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.parentAgent {
+  display: flex;
+  align-items: center;
+  padding: 35px 40px;
+}
+.handleAgentButton {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+}
+.plusButon {
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.handleAgentMargin {
+  margin: 0 40px;
+}
+@media screen and (max-width: 1300px) {
+  .parentAgent {
+    flex-direction: column;
+  }
+  .handleResponsiveMargin {
+    margin-bottom: 6px;
+  }
+  .handleAgentButton {
+    padding: 10px;
+  }
+}

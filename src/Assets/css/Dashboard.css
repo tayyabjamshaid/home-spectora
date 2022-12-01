@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.dashboardParent {
+  font-family: "Roboto", sans-serif;
+  padding-top: 5%;
+}
+.dashboardHeading {
+  font-size: 16px;
+}
+.dashboardSmallText {
+  font-size: 13px;
+  color: #c2d2e0;
+}
+.miniGraphsParent {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.miniGraph {
+  flex-basis: 33%;
+  overflow: hidden;
+}
+
+.canvasjs-chart-toolbar,
+.canvasjs-chart-credit {
+  display: none;
+}
+.mainSection {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+.graphCal {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: space-between;
+}
+.map {
+  flex-basis: 28%;
+  height: 800px;
+}
+.graph {
+  flex-basis: 40%;
+}
+.calender {
+  flex-basis: 58%;
+}
+/* .chartLine {
+  width: 758.6px;
+} */
+@media screen and (max-width: 800px) {
+  .miniGraphsParent {
+    flex-direction: column;
+    margin-top: 8px;
+  }
+  .mainSection {
+    display: block;
+  }
+  .map {
+    margin-top: 2%;
+    height: 450px;
+  }
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.userProfileHandlePaddingAll {
+  padding: 16px 16px 0px 272px;
+}
+.companyProfileHeadingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.handleCompanyParentHeading {
+  font-size: 18px;
+}
+.companyButton {
+  padding: 9px 25px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 22px;
+  margin-top: 30px;
+}
+.companyHeading {
+  padding: 20px;
+  background-color: #eef5fd;
+  font-size: 20px;
+}
+@media screen and (max-width: 960px) {
+  .userProfileHandlePaddingAll {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .companyProfileHeadingDiv {
+    flex-direction: column-reverse;
+  }
+  .handleCompanyParentHeading {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .companyButton {
+    margin: 0;
+  }
+}
+/* ----------------- */
+
+.parentStaffUser {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.imgPortionUser {
+  flex-basis: 50%;
+  height: 420px;
+}
+.inputFieldsPortionUser {
+  height: 420px;
+
+  flex-basis: 50%;
+}
+.imgPortionPartsUser,
+.fieldsPortionPartsUser {
+  width: 100%;
+}
+.imgPortionHeadingUser {
+  font-size: 14px;
+  font-weight: 500;
+}
+.imgBoxHandleUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxUser {
+  border: #d6e1e8 dashed 2px;
+  width: 33vw;
+  height: 379px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.labelInputFieldHandleUser {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  padding-top: 10px;
+}
+.inputUser {
+  width: 34vw;
+  border-radius: 7px;
+  padding: 7px 5px;
+  background-color: #ffffff;
+  border: 1px solid #d6e1e8;
+}
+.labelSpacingUser {
+  padding-bottom: 6px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .imgPortionUser {
+    height: 404px;
+  }
+  .staffHeadingUser {
+    font-size: 20px;
+  }
+  .parentStaffUser {
+    justify-content: center;
+  }
+
+  .labelInputFieldHandleUser {
+    padding-left: 7%;
+  }
+  .inputUser {
+    width: 59vw;
+  }
+  .boxUser {
+    width: 60vw;
+    height: 270px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .boxUser {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .boxUser {
+    margin-left: 35px;
+  }
+}
+/* ---------Upload Photo-------- */
+.uploadImgDiv {
+  display: flex;
+  flex-direction: column;
+}
+.sd {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aec4d2;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 25px;
+  color: #eff4f6;
+}

@@ -1,0 +1,116 @@
+.backgroundColorAll {
+  background-color: #f9faff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 25px;
+  background: #f9faff;
+}
+.heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* dropdown css */
+.dropbtn {
+  background-color: #eef5fd;
+  color: #aec4d2;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.handlePadding {
+  padding-top: 14px !important;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #eef5fd;
+}
+
+.button {
+  padding: 12px 13px;
+  margin-left: 6px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.table {
+  --bs-table-striped-bg: none !important;
+}
+.table-striped > tbody > tr:nth-child(2n + 1) > td,
+.table-striped > tbody > tr:nth-child(2n + 1) > th {
+  background-color: #eef5fd !important;
+}
+.table-striped > tbody > tr:nth-child(2n + 1) > .manageIcons {
+  color: #aec4d2;
+}
+
+.table-striped > tbody > tr:hover {
+  background-color: #eef5fd;
+}
+.giveSpace {
+  padding-left: 28px !important;
+}
+.manageIcons {
+  font-size: 19px;
+  color: #aec4d2;
+}
+.sd {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .backgroundColorAll {
+    background-color: white;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .filterButton {
+    margin-top: 6px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .backgroundColorAll {
+    background-color: none;
+  }
+  .header {
+    padding: 3% 12px;
+  }
+}

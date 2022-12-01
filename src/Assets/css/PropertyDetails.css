@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.customSelect {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 15px; */
+  width: 24vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 10px;
+  border-radius: 7px;
+  color: #ccdae3;
+  /* color: black; */
+  border: 1px solid #ccdae3;
+}
+.option {
+  color: black;
+}
+
+.inputAddReport {
+  color: black;
+}
+.inputAddReport::placeholder {
+  color: #ccdae3;
+}
+.customSelect:focus,
+.inputAddReport:focus {
+  border-color: #9fcdff;
+  outline: none;
+}
+
+/* .option:checked {
+  color: rgb(246, 250, 0);
+  background-color: rgb(5, 26, 1);
+} */
+.handleFlex {
+  display: flex;
+  flex-direction: column;
+}
+.handleInputPropertyPadding {
+  padding: 15px 10px;
+}
+
+.addReportPropertyBox {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxProperty {
+  width: 270px;
+  height: 204px;
+  margin-top: 37px;
+}
+
+.handleImgProperty {
+  width: 270px;
+  height: 204px;
+  position: relative;
+  overflow: hidden;
+}
+.propertyImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+}
+.propertyImageLabel {
+  position: absolute;
+  display: flex;
+  top: 158px;
+  left: 75px;
+  color: white;
+}
+/* .inputAddReportProperty {
+  width: 16vw;
+  border-radius: 6px;
+  border: 1px solid #dde5f1;
+  padding: 8px 10px;
+} */
+@media screen and (max-width: 1400px) {
+  .handleFlex .customSelect {
+    width: 30vw;
+  }
+}
+@media (min-width: 960px) and (max-width: 1090px) {
+  .handleFlex .customSelect {
+    width: 27vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .handleFlex .customSelect {
+    width: 39vw;
+  }
+}
+@media (min-width: 650px) and (max-width: 725px) {
+  .handleFlex .customSelect {
+    width: 37vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .handleFlex .customSelect {
+    width: 70vw;
+    margin-bottom: 15px;
+  }
+}
