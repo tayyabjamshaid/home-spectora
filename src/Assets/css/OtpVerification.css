@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.otpHeadingPaddingTop {
+  padding-top: 35px;
+}
+.otpMiniHeading {
+  font-size: 14px;
+  color: #858586;
+  word-wrap: break-word;
+}
+.otpInputField {
+  width: 60px;
+  height: 60px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 7px;
+  padding-left: 25px;
+  padding-bottom: 3px;
+  font-weight: 500;
+}
+.otpHyphenPadding {
+  padding: 0 9px;
+}
+.otpInputField[type="number"]::-webkit-inner-spin-button,
+.otpInputField[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.otpInputField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.timerOtpDiv {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 32px;
+  padding-top: 50px;
+}
+.makeFontWeightBold {
+  font-weight: 500;
+}
+.handleColorPadding {
+  color: #007bff;
+  padding-top: 20px;
+}
+.otpSubmitButton {
+  width: 315px;
+  border-radius: 6px;
+  padding: 12px 0;
+  background: #007bff;
+  color: white;
+  border: none;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 530px) {
+  .timerOtpDiv {
+    padding-right: 27px;
+  }
+}
+@media (min-width: 480px) and (max-width: 500px) {
+  .timerOtpDiv {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 460px) and (max-width: 480px) {
+  .timerOtpDiv {
+    padding-right: 64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .otpMiniHeading {
+    width: 79vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .timerOtpDiv {
+    padding-right: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .timerOtpDiv {
+    padding-right: 23px;
+  }
+  .otpMiniHeading {
+    width: 84vw;
+  }
+  .otpSubmitButton {
+    width: 307px;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .otpMiniHeading {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .timerOtpDiv {
+    padding-right: 13px;
+  }
+}

@@ -19,6 +19,8 @@ import UserProfile from "../Pages/Settings/UserProfile";
 import CreateAgreement from "../Pages/Settings/CreateAgreement";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/Signup/SignUp";
+import ForgotPassword from "../Pages/Login/ForgotPassword";
+import OtpVerification from "../Pages/Login/OtpVerification";
 
 export default function HeaderComponent() {
   const classes = useStyles();
@@ -37,22 +39,27 @@ export default function HeaderComponent() {
   console.log(classes.wrapper);
   return (
     <div>
-      {location.pathname !== "/login" && location.pathname !== "/register" && (
-        <>
-          <Navbar handleDrawerOpen={handleDrawerOpen} />
-          <Sidenav
-            mobileOpen={mobileOpen}
-            handleDrawerOpen={handleDrawerOpen}
-            handleDrawerClose={handleDrawerClose}
-          />
-        </>
-      )}
+      {location.pathname !== "/login" &&
+        location.pathname !== "/register" &&
+        location.pathname !== "/forgotPassword" &&
+        location.pathname !== "/otpVerification" && (
+          <>
+            <Navbar handleDrawerOpen={handleDrawerOpen} />
+            <Sidenav
+              mobileOpen={mobileOpen}
+              handleDrawerOpen={handleDrawerOpen}
+              handleDrawerClose={handleDrawerClose}
+            />
+          </>
+        )}
 
       {/* // registerianss our Routes  */}
       <Box
         className={
           location.pathname !== "/login" &&
           location.pathname !== "/register" &&
+          location.pathname !== "/forgotPassword" &&
+          location.pathname !== "/otpVerification" &&
           classes.wrapper
         }
       >
@@ -73,6 +80,8 @@ export default function HeaderComponent() {
           <Route path="/createAgreement" element={<CreateAgreement />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<SignUp />} />
+          <Route path="/forgotPassword" element={<ForgotPassword />} />
+          <Route path="/otpVerification" element={<OtpVerification />} />
 
           <Route path="/scratchTemplate" element={<ScratchTemplate />} />
         </Routes>

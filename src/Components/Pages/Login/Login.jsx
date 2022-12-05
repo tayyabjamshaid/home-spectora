@@ -113,7 +113,13 @@ export default function Login() {
           <Form>
             <Form.Check type="switch" id="custom-switch" label="Remember Me" />
           </Form>
-          <span>Forgot Password ?</span>
+          <Link
+            to="/forgotPassword"
+            className="handleLinkStyling"
+            style={{ "color": "black" }}
+          >
+            <span>Forgot Password ?</span>
+          </Link>
         </div>
         <button onClick={handleSubmit} className="loginSubmitButton">
           Login
@@ -121,9 +127,9 @@ export default function Login() {
         <div className="moveTowardsSignUp">
           <span>
             Don't have an account?{" "}
-            <Link to="/register">
+            <Link to="/register" className="handleLinkStyling">
               {" "}
-              <span style={{ "color": "#625e8a" }}> Register</span>
+              <span> Register</span>
             </Link>
           </span>
         </div>
