@@ -1,0 +1,80 @@
+Buttons
+Buttons
+
+import { Button } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
+
+function App() {
+  const kesa=()=>{
+    alert("TAYYAB")
+  }
+  return (
+    <div>
+    <h1>hi</h1>
+    <Button variant="contained" startIcon={<DeleteIcon/>} onClick={kesa} color="warning" size="large">Contained</Button>
+
+    </div>
+  );
+}
+
+export default App;
+
+U can use icons with start and end of the button like startIcon,endIcon
+U can use variant of different types like outlined,text etc
+u can use different colors like primary,secondary etc
+u can use different sizes like small,medium,large etc
+=>u can also use button groups
+<ButtonGroup variant="contained" color="secondary" size="medium">
+  <Button>button1</Button>
+  <Button>button1</Button>
+  <Button>button1</Button>
+</ButtonGroup>
+
+=>u can also make your group buttons vertical
+<ButtonGroup variant="contained" color="secondary" size="medium" orientation="vertical">
+  <Button>button1</Button>
+  <Button>button1</Button>
+  <Button>button1</Button>
+</ButtonGroup>
+-------------------------------------------------------------------------
+Fab
+import { Fab} from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import NavigationIcon from '@mui/icons-material/Navigation';
+ function App() {
+
+  return (
+    <div>
+    <Fab color="info"><AddIcon/></Fab>
+    <Fab color="success" variant="extended">
+      <NavigationIcon sx={{mr:1}}/> Extended
+    </Fab>
+    </div>
+  );
+}
+Fab variant has 2 values
+1-circular(by default)
+2-Extended 
+------------------------
+CheckBox
+import {Checkbox,Fab} from '@mui/material';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorder from '@mui/icons-material/Favorite';
+
+function App() {
+
+  return (
+    <div>
+    <Checkbox />  //without check
+        <Checkbox color="secondary" checked/>  //default check
+                <Checkbox  indeterminate/>     // - in checkbox
+        <Checkbox icon={<FavoriteIcon/>} checkedIcon={<FavoriteBorder/>}/>  
+//how to give icons on select and unselect
+
+
+    </div>
+  );
+}
+-------------------------------
+
+export default App;

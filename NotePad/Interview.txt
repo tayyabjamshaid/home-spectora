@@ -1,0 +1,246 @@
+function a(){
+let a =90;
+b();
+console.log(a)
+}
+function b(){
+
+let b =91;
+console.log(b)
+c();
+
+}
+function c(){
+
+let c =92;
+console.log(c)
+}
+a();
+91
+92
+90
+-------
+var obj1 = {
+  valueOfThis: function(){
+    return this;
+  }
+}
+var obj2 = {
+  valueOfThis: ()=>{
+    return this;
+  }
+}
+------------
+sum();  
+let sum=function(){
+console.log("hi)
+}
+---------------------
+a();
+(function a(){
+    console.log("hi)
+}) 
+---------------------
+sum(5, 7);
+const sum = (a, b) => {
+  console.log(a + b);
+};
+---------------
+console.log(a);
+    let a = 10;
+-------------
+b();
+console.log(a);
+
+var a = "Hello World!";
+function b(){
+    console.log("Called b!");
+}
+------------------
+let a = 10;
+    function f() {
+        if (true) {
+            let b = 9
+ 
+          
+            console.log(b);
+        }
+ 
+        
+        console.log(b);
+    }
+    f()
+ 
+   
+    console.log(a)
+------------
+ let a = 10
+ 
+   
+    let a = 10
+ 
+   
+    a = 10
+-------------
+x=6
+y='6'
+x==y
+x!=y
+x===y
+x!==y
+----------------
+console.log(this);
+function data(){
+function data2(){
+console.log(this)
+}
+data2():
+}
+data();
+--------
+const b = {
+    name:"Vivek",
+    f: function(){
+      var self = this;
+      console.log(this.name);                                                                                    //this points object fields like name
+      (function(){
+        console.log(this.name);                                                   //ye function direct kisi obj me ni ha,is lye is ka this window obj ko point out kr rha ha aur window obj me abi koi name nam ki property ni lye,is lye undefined dy ga me 
+        console.log(self.name);                                                    //this points object fields like name
+      })();
+    }
+  }
+  b.f();
+---------------------------
+function func1(){
+  setTimeout(()=>{
+    console.log(x);
+    console.log(y);
+  },3000);
+
+  var x = 2;
+  let y = 12;
+}
+func1();
+---------------
+let a =0;
+let b=false;
+console.log(a==b);
+true
+-----------
+let hero = {
+    powerLevel: 99,
+    getPower(){
+      return this.powerLevel;
+    }
+  }
+  
+  let getPower = hero.getPower;
+  
+  let hero2 = {powerLevel:42};
+  console.log(getPower());                                             //undefined
+  console.log(getPower.apply(hero2));                                  //42                    
+------------------------------------
+(function(){
+  setTimeout(()=> console.log(1),2000);
+  console.log(2);
+  setTimeout(()=> console.log(3),0);
+  console.log(4);
+})();
+2nd timeout me 0 sec ka time diya ha mgr phr b js apni nature k mutabiq phly sary function ko execute kry ga aur phr setimeout ko chlaiy ga
+2
+4
+3
+1
+--------------------------
+function runFunc(){
+  console.log("1" + 1);
+  console.log("A" - 1);                                        //nan
+  console.log(2 + "-2" + "2");
+  console.log("Hello" - "World" + 78);                         //nan
+  console.log("Hello"+ "78");
+}
+runFunc();
+
+------------------
+Case 1
+ek variable humny function k bhr use kya ha aur jab hum function k andr phr sy same variable ko var/let k sath use kry gy tu function isy apna variable smjy ga aur is pr hoisting concepts implement hu jaiy gy
+
+var x = 23;
+
+(function () {
+  console.log(x)                                 //it give error 1st here bcoz variable hoisting concept
+  var x = 43;
+  (function random() {
+    x++;
+    console.log(x);                                //it gives error here bcoz x is not defined as var concept does
+    var x = 21;
+  })();
+})();
+console.log(x);
+
+variable hoisting concept applied
+
+Case 2:
+var x = 23;
+Is case me hum x ki value ko update kr skty ha kyu k ye datatype k sath asign ni kya gya
+(function () {
+  console.log(x); //23
+   x = 43;
+  (function random() {
+    x++;
+    console.log(x); //44
+   x = 21;
+  })();
+})();
+console.log(x);   //21
+----------------------------
+map vs foreach
+------------
+outerhtml vs innerhtml
+
+----------
+document.firstChild vs document.firstElementChild
+<body>
+<h1>Hi</h1>
+</body>
+document.body.firstChild:
+document.body.firstElementChild;
+------------
+pop vs shift
+-----------------
+arrow function vs regular function
+-------------
+DataTypes 
+-----------------
+class
+-------
+inheritance
+------
+new
+--------
+this
+-----
+variable hoisting
+-----
+closure
+-------
+let vs const
+---------------
+setTimeOut is scyronous or ascyronous
+console.log("ONE");
+setTimeOut(()=>{
+console.log("TWO")
+},2000)
+console.log("Three");
+--------------
+Callbacks
+Pyramid of Doom(Callback hell)
+-----------
+Promises
+-----
+States
+A Promise is in one of these states:
+ pending: initial state, neither fulfilled nor rejected.
+ fulfilled: meaning that the operation was completed successfully.
+ rejected: meaning that the operation failed
+

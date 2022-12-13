@@ -1,0 +1,179 @@
+import React from "react";
+import "./css/Home.css";
+
+export default function Home() {
+  return (
+    <div>
+      <h1 className="heading">Sales InVoice</h1>
+      <span>VEHICLE/CUSTOMER DETAIL</span>
+      <div className="firstTable">
+        <div id="firstDiv">
+          <div className="firstLine">
+            <span> Invoice No</span>
+            <span>1997809</span>
+            <span>29-May-2019</span>
+            <span>11:22 Am</span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan">Customer Name</span>
+            <span id="secondSpan">SUI NORTHERN GAS PIPELINE LTD</span>
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="normalDiv">
+            <span id="firstSpan"> Address</span>
+            <span id="secondSpan">79-A/B CANAL COLONY FAREED TOWN'S</span>
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="normalDiv">
+            <span id="firstSpan"> Mobile</span>
+            <span id="secondSpan">03360004638</span>
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="normalDiv">
+            <span id="firstSpan">Time IN:</span>
+            <span id="secondSpan">10:19AM</span>
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="normalDiv">
+            <span id="firstSpan"> Time Out:</span>
+            <span id="secondSpan">11:22AM</span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan"> Work Order No/Date</span>
+            {/* <span id="secondSpan"></span> */}
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="firstLine">
+            <span>RO:No/Date</span>
+            <span>1997809</span>
+            <span>29-May-2019</span>
+            <span>11:22 Am</span>
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="normalDiv">
+            <span id="firstSpan"> Loss No/Date:</span>
+            {/* <span id="secondSpan">11;22AM</span> */}
+          </div>
+        </div>
+        <div class="vl"></div>
+        {/* ---------------------------------------------------- */}
+        <div id="secondDiv">
+          <div className="hide">
+            <span>I am NOT SHOWING IN BROWSER</span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan"> Reg No:</span>
+            <span id="secondSpan">SLJ-18-12</span>
+          </div>
+          <hr className="colorLine" />{" "}
+          <div className="normalDiv">
+            <span id="firstSpan"> Frame No:</span>
+            <span id="secondSpan">9402789</span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan"> Make/Variant:</span>
+            <span id="secondSpan">
+              <span>TOYOTA </span>
+              <span style={{ "marginLeft": "10px" }}>KUN1SR-TRMRYP</span>
+            </span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan">KM:</span>
+            <span id="secondSpan">25042</span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan"> Next Follow up:</span>
+            <span id="secondSpan">
+              <span>255,424 Km or </span>
+              <span style={{ "marginLeft": "10px" }}>09-jul-2019</span>
+            </span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan"> Service Advisor:</span>
+            <span id="secondSpan">
+              <span>HASNAIN YOUSAF</span>
+              <span style={{ "marginLeft": "10px" }}>ID: HAS</span>
+            </span>
+          </div>
+          <hr className="colorLine" />
+          <div className="hide">
+            <span>I am NOT SHOWING IN BROWSER</span>
+          </div>
+          <hr className="colorLine" />
+          <div className="normalDiv">
+            <span id="firstSpan"> Policy No/Date:</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+-----------
+* {
+  padding: 0;
+  margin: 0;
+}
+.heading {
+  text-align: center;
+}
+.firstTable {
+  height: 30%;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  border: 1px solid black;
+  font-size: 1vw;
+}
+#firstDiv,
+#secondDiv {
+  width: 50%;
+}
+.vl {
+  border-left: 2px solid black;
+  height: 30vh;
+}
+.colorLine {
+  border-top: 1px solid black;
+}
+.normalDiv {
+  padding-left: 3px;
+}
+.firstLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 3px;
+}
+.hide {
+  visibility: hidden;
+}
+#firstSpan {
+  display: inline-block;
+  width: 30%;
+}
+#secondSpan {
+  display: inline-block;
+
+  width: 70%;
+}
+@media only screen and (max-width: 1105px) {
+  .normalDiv {
+    display: flex;
+    justify-content: space-between;
+    /* height: 40px; */
+  }
+  #firstSpan {
+    width: auto;
+  }
+  #secondSpan {
+    width: auto;
+  }
+}
+

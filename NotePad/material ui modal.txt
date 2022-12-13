@@ -1,0 +1,212 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../../Assets/css/Templates.css";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+
+const Templates = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const navigate = useNavigate();
+  const openExistingTemplates = () => {
+    navigate("/templateCenter");
+  };
+  const goToExisting = () => {
+    navigate("/templateCenter");
+  };
+  const goToScratch = () => {
+    navigate("/scratchTemplate");
+  };
+
+  return (
+    <div className="handleBackground">
+      <div className="parentButton">
+        <button className="templateCenter" onClick={openExistingTemplates}>
+          Template Center
+        </button>
+        <button className="createTemplate" onClick={handleOpen}>
+          Create Template
+        </button>
+        <Modal
+          className="modal"
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography
+              id="modal-modal-title"
+              className="close"
+              variant="h6"
+              component="h2"
+            >
+              <span className="headingModal">
+                Choose Template
+                <span onClick={handleClose}>
+                  <CancelOutlinedIcon />
+                </span>
+              </span>
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <p>
+                {" "}
+                Choose template formate , we allow you to make your own template
+                from Scratch or use as default
+              </p>
+
+              <div className="modalButtons">
+                <button className="modalBtnChild" onClick={goToScratch}>
+                  <input type="radio" className="radio" />
+                  Create Template from Scratch
+                </button>
+                <button className="modalBtnChild" onClick={goToExisting}>
+                  <input type="radio" className="radio" />
+                  Choose from default Template
+                </button>
+              </div>
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    </div>
+  );
+};
+
+export default Templates;
+--
+.handleBackground {
+  width: 100%;
+  /* height: 86vh; */
+  background-color: #f9faff;
+  padding-top: 4%;
+}
+.parentButton {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2%;
+  padding-right: 30px;
+}
+.templateCenter {
+  padding: 9px 26px;
+  background-color: #aec4d2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.createTemplate {
+  padding: 9px 25px;
+  margin-left: 8px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 830px) {
+  .parentButton {
+    justify-content: center;
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .parentButton {
+    justify-content: center;
+    padding-top: 10%;
+  }
+  .templateCenter,
+  .createTemplate {
+    padding: 9px 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.modal .MuiBox-root {
+  border: none !important;
+  padding: 0 !important;
+  width: 40%;
+}
+.close {
+  background-color: #eef5fd !important;
+
+  padding: 15px 12px;
+}
+
+.headingModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.modalPara {
+  padding: 0 10px;
+}
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 2%;
+}
+.modalBtnChild {
+  padding: 20px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #eef5fd;
+  color: #0e0f10;
+  font-weight: bold;
+}
+.radio {
+  margin-right: 5px;
+}
+@media screen and (max-width: 1350px) {
+  .modal .MuiBox-root {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .modal .MuiBox-root {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .modal .MuiBox-root {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .modal .MuiBox-root {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .modal .MuiBox-root {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .modal .MuiBox-root {
+    width: 96%;
+  }
+  .modalButtons {
+    flex-direction: column;
+  }
+  .modalBtnChild {
+    margin: 10px;
+  }
+}

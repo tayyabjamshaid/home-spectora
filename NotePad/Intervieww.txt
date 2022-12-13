@@ -1,0 +1,255 @@
+function a(){
+let a =90;
+b();
+console.log(a)
+}
+function b(){
+
+let b =91;
+console.log(b)
+c();
+
+}
+function c(){
+
+let c =92;
+console.log(c)
+}
+a();
+91
+92
+90
+-------
+var obj1 = {
+  valueOfThis: function(){
+    return this;
+  }
+}
+var obj2 = {
+  valueOfThis: ()=>{
+    return this;
+  }
+}
+------------
+sum();  
+let sum=function(){
+console.log("hi)
+}
+---------------------
+a();
+(function a(){
+    console.log("hi)
+}) 
+---------------------
+sum(5, 7);
+const sum = (a, b) => {
+  console.log(a + b);
+};
+---------------
+console.log(a);
+    let a = 10;
+-------------
+b();
+console.log(a);
+
+var a = "Hello World!";
+function b(){
+    console.log("Called b!");
+}
+------------------
+let a = 10;
+    function f() {
+        if (true) {
+            let b = 9
+ 
+          
+            console.log(b);
+        }
+ 
+        
+        console.log(b);
+    }
+    f()
+ 
+   
+    console.log(a)
+------------
+ let a = 10
+ 
+   
+    let a = 10
+ 
+   
+    a = 10
+-------------
+x=6
+y='6'
+x==y
+x!=y
+x===y
+x!==y
+----------------
+console.log(this);
+function data(){
+function data2(){
+console.log(this)
+}
+data2():
+}
+data();
+--------
+const b = {
+    userName:"Vivek",
+    f: function(){
+      var self = this;
+      console.log(this.userName);                                                                                 
+      (function(){
+        console.log(this.userName);                                                   
+        console.log(self.userName);                                                  
+      })();
+    }
+  }
+  b.f();
+---------------------------
+function func1(){
+  setTimeout(()=>{
+    console.log(x);
+    console.log(y);
+  },3000);
+
+  var x = 2;
+  let y = 12;
+}
+func1();
+---------------
+let a =0;
+let b=false;
+console.log(a==b);
+true
+-----------
+let hero = {
+    powerLevel: 99,
+    getPower(){
+      return this.powerLevel;
+    }
+  }
+  
+  let getPower = hero.getPower;
+  
+  let hero2 = {powerLevel:42};
+  console.log(getPower());                                             
+  console.log(getPower.apply(hero2));                                                     
+------------------------------------
+(function(){
+  setTimeout(()=> console.log(1),2000);
+  console.log(2);
+  setTimeout(()=> console.log(3),0);
+  console.log(4);
+})();
+--------------------------
+function runFunc(){
+  console.log("1" + 1);
+  console.log("A" - 1);                                      
+  console.log(2 + "-2" + "2");
+  console.log("Hello" - "World" + 78);                        
+  console.log("Hello"+ "78");
+}
+runFunc();
+
+------------------
+Case 1
+
+var x = 23;
+
+(function () {
+  console.log(x)                                 
+  var x = 43;
+  (function random() {
+    x++;
+    console.log(x);                                
+    var x = 21;
+  })();
+})();
+console.log(x);
+
+
+Case 2:
+var x = 23;
+(function () {
+  console.log(x); 
+   x = 43;
+  (function random() {
+    x++;
+    console.log(x); 
+   x = 21;
+  })();
+})();
+console.log(x);  
+----------------------------
+map vs foreach
+------------
+outerhtml vs innerhtml
+
+----------
+document.firstChild vs document.firstElementChild
+<body>
+<h1>Hi</h1>
+</body>
+document.body.firstChild:
+document.body.firstElementChild;
+------------
+pop vs shift
+-----------------
+arrow function vs regular function
+-------------
+DataTypes 
+-----------------
+class
+-------
+inheritance
+------
+new
+--------
+this
+-----
+variable hoisting
+-----------------
+local storage vs cookies
+-----
+closure
+-------
+let vs const
+---------------
+setTimeOut is scyronous or ascyronous
+console.log("ONE");
+setTimeOut(()=>{
+console.log("TWO")
+},2000)
+console.log("Three");
+--------------
+Callbacks
+Pyramid of Doom(Callback hell)
+-----------
+Promises
+-----
+States
+A Promise is in one of these states:
+ pending: initial state, neither fulfilled nor rejected.
+ fulfilled: meaning that the operation was completed successfully.
+ rejected: meaning that the operation failed
+-------------------------
+let promise = new Promise(function (resolve, reject) {
+  console.log("I AM PENDING");
+  setTimeout(() => {
+    console.log("I AM Promise 1");
+    resolve(5);
+  });
+});
+let promise2 = new Promise(function (resolve, reject) {
+  console.log("I AM PENDING");
+  setTimeout(() => {
+    console.log("I AM Promise 2");
+    resolve(6);
+  });
+});
+console.log(promise,promise2)
